@@ -1,0 +1,8 @@
+<%- include("partials/header"); -%>
+<div class="page">
+    <h1 class="Heading center" > <%= Post.name %> </h1>
+    <p class="auther-name"><%=Post.date.substring(4,15)%></p>  
+    <% const content = Post.content.replace(/\n/g, "<br>");  %>
+    <p id="content"> <%- content; %> </p>
+</div>
+<%- include("partials/footer"); -%>

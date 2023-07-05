@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+
+  <h2 class="messege light-text"> Write a new BLog <i class="fa-regular fa-pen-to-square"></i></h2>
+  <form id="createBlogForm" method="post" action="/create">
+
+    <input class="form-input"type="text" id="title" name="name" required placeholder="Title">
+
+    <textarea class="form-input txt" style="resize: none" name="content" required placeholder="content"></textarea>
+    <div class="footer">
+      <button class="btn" type="submit">Publish   <i class="fa-regular fa-floppy-disk"></i></button>
+    </div>
+  </form>
+  <script src="https://kit.fontawesome.com/ffbf87d143.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  

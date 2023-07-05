@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+
+<% if(!allBlog.length) { %>
+    <h2 class="messege light-text"> No blogs found :( </h2>
+
+<% } else { %>
+    <h2 class="messege light-text">see what people are saying</h2>
+    <%- include("partials/blogloop"); -%>
+
+<% } %>
+
+<%- include("partials/footer"); -%>

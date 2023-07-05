@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+
+<h2 class="user-name">hello <%=user.userName%> <br> this is your Dashboard</h2>
+    <form action="/logout" method="post">
+        <button class="btn small">Logout</button>
+    </form>
+    <div class="dash-card">
+        <p>Your Blogs</p>
+        <div class="dash-dash"></div>
+        <%- include("partials/blogloop"); -%>
+    </div>
+    
+<%- include("partials/footer"); -%>

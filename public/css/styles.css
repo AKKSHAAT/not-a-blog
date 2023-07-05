@@ -1,0 +1,355 @@
+:root {
+  --white: #fff;
+  --lightblue: #95a8b4;
+  --gold: #d7a553;
+  --black: #4b4b4b;
+  --pink: #FF8882
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  opacity: 9%;
+  margin: 2% 1.5%;
+}
+nav {
+  background-color: var(--black);
+  padding: 2%;
+  margin: 0 0 5% 0;
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
+  box-shadow: -18px 24px 41px -19px rgba(0, 0, 0, 0.75);
+  height: 2rem;
+}
+.server-messege {
+  font-weight: 100;
+  text-align: center;
+  background-color: var(--pink);
+  border-radius: 5px;
+}
+.navItem {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+html {
+  color: var(--black);
+  font-family: "Raleway", sans-serif;
+  background-color: var(--black);
+  /* background: linear-gradient(90deg, var(--blue) 50%, var(--lightblue) 50%); */
+}
+
+.link {
+  margin-left: 1%;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#themeButton {
+  position: absolute;
+  right: 7.5%;
+  border: none;
+  background: none;
+}
+
+.center {
+  text-align: center;
+}
+.Heading {
+  font-size: 50px;
+  color: var(--black);
+  font-weight: 900;
+  margin: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.logo {
+  width: auto;
+  height: 4rem;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+nav > .logo {
+  position: absolute;
+  left: 2rem;
+  top: 0.8rem;
+}
+.post-card {
+  background-color: var(--white);
+  padding: 2% 0 1%;
+  margin: 3.5% 7%;
+  border-radius: 5px;
+  height: 290px;
+  box-shadow: -18px 24px 41px -19px rgba(0, 0, 0, 0.75);
+}
+
+/* .post-card > .image {
+  background-image: linear-gradient(
+      0deg,
+      rgba(74, 74, 75, 0.979) 5%,
+      rgba(15, 25, 27, 0.521) 100%
+    ),
+    url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 0;
+  border-radius: inherit;
+} */
+
+.Heading > a {
+  text-decoration: none;
+  color: var(--black);
+  margin: 10rem 3.5rem 0;
+  font-size: 70px;
+  letter-spacing: 0.3rem;
+}
+
+.auther-name {
+  font-weight: 100;
+  margin: 0.5rem 4rem 0;
+}
+
+.auther-name > span {
+  margin: 0 0 0 50%;
+}
+
+#content {
+  /* display: inline;   */
+  word-wrap: break-word;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0 5%;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.page {
+  background-color: var(--white);
+  margin: 0 10%;
+  padding: 1% 5%;
+  border-radius: 10px;
+}
+.delete-btn {
+  border-radius: 5px;
+  display: inline;
+  position: relative;
+  left: 85%;
+  bottom: 30px;
+  border: none;
+  background-color: var(--gold);
+  padding: 0.5rem;
+  color: var(--black);
+  font-weight: 900;
+}
+
+/* CREATE FORM */
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.form-input {
+  color: var(--black);
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 0 0.5rem 15%;
+  font-size: 30px;
+  display: block;
+  border: none;
+  background-color: #ffffff;
+  height: 50px;
+  width: 70%;
+  padding: 0.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.txt {
+  height: 400px;
+  padding-top: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.btn {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  height: 120px;
+  width: 350px;
+  background-color: var(--gold);
+  font-weight: 900;
+  font-size: 34px;
+  border: none;
+}
+
+.footer > .btn:hover {
+  height: 130px;
+  transition: height 0.3s ease;
+}
+.footer > .btn > a {
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  font-size: 34px;
+  color: var(--black);
+}
+
+.form-container {
+  margin: 5% auto;
+  background-color: var(--white);
+  padding: 5% 2% 6%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+/* overlays */
+
+.small {
+  margin: 3% auto 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+}
+
+.dash-card {
+  margin: 1rem 2rem;
+  background: none;
+  border-radius: 5px;
+  box-shadow: -18px 24px 41px -19px rgba(0, 0, 0, 0.75);
+  border-width: 0.2rem;
+  padding: 1rem 0.5rem 5rem  ;
+}
+.dash-card > p {
+  padding: 0 7%;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.dash-card >.logo { 
+  height: 190px;
+  margin: 1.5rem 5rem;
+}
+.light-text {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 300;
+  color: var(--white);
+  text-transform: capitalize;
+}
+.user-name {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem 10rem;
+  text-transform: capitalize;
+}
+
+.dash-dash {
+  margin: 20px;
+  height: 1px;
+  background-color: var(--white);
+  opacity: 0.3;
+}
+
+.user-profile {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  width: auto;
+  height: 3rem;
+  color: var(--gold);
+}
+
+.user-profile > .icon {
+  font-size: 25px;
+  margin: 0 auto 10%;
+
+  padding: 0 10px;
+  /* background-color: red; */
+}
+
+.user-profile > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 300;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+  /* CSS rules for phone-sized devices */
+  nav {
+    box-shadow: none;
+    margin: 0 0 10%;
+  }
+
+  .navItem {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 12% 2.7% 0;
+  }
+
+  .user-profile > .icon {
+    display: block;
+  }
+
+  .user-profile > a{
+    font-size: 1.2rem;
+  }
+
+  .user-name {
+    margin: 20% 5%;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 0;
+    color: var(--white);
+    text-align: left;
+    text-transform: capitalize;
+  }
+  .post-card {
+    background-color: var(--white);
+    padding: 2% 0 0;
+    height: 220px;
+  }
+  .delete-btn {
+    position: relative;
+    left: 70%;
+    bottom: 0;
+  }
+
+  .footer> .btn {
+    height: 60px;
+    width: 100vw;
+    padding: 1% 0;
+  }
+
+}

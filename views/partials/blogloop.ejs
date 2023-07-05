@@ -1,0 +1,18 @@
+<% allBlog.forEach((blog)=>{ %>
+    <div class="post-card">
+        <div>
+            <h3 class="Heading"> <a href="/blog/<%=blog._id%> "> <%=blog.name.substring(0,30)%> </a></h3>
+        <p class="auther-name"><%=blog.date.substring(4,15)%></p>
+        </div>
+        <hr>
+        
+        <p id="content"> <%=blog.content.substring(0,200)%>...</p>
+
+        <% if(renderDelete) {%>
+            <form action="/delete" method="post">
+                <button class="delete-btn" type="submit" name="deleteForm" value="<%=blog._id%>"> Delete <i class="fa-solid fa-trash"></i> </button>
+            </form>
+        <% }; %>
+        
+    </div>
+<% }); %>
