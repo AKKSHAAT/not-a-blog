@@ -1,12 +1,12 @@
 <% allBlog.forEach((blog)=>{ %>
     <div class="post-card">
         <div>
-            <h3 class="Heading"> <a href="/blog/<%=blog._id%> "> <%=blog.name.substring(0,8)%> </a></h3>
+            <h3 class="Heading"> <a href="/blog/<%=blog._id%> "> <%=blog.name.substring(0,9)%>...</a></h3>
         <p class="auther-name"><%=blog.date.substring(4,15)%></p>
         </div>
         <hr>
         
-        <p id="content"> <%=blog.content.substring(0,30)%>...</p>
+        <p id="content"> <%=blog.content.substring(0,50)%>...</p>
 
         <% if(renderDelete) {%>
             <form action="/delete" method="post">
