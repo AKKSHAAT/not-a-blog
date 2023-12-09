@@ -11,12 +11,11 @@ const User = require("./userModel");
 const { removeUserBlogID, findBlogs } = require("./userUtils");
 
 const DB_Name = "notABlog";
-const DB_URL = process.env.DB_URL_ENV + DB_Name;
+const DB_URL = process.env.DB_URL_ENV;
 
 mongoose.connect(DB_URL, { useNewUrlParser: true }).then(() => {
   console.log("Connected to DB");
 });
-
 
 app.set("view engine", "ejs");
 app.set("json spaces", 2);
@@ -42,7 +41,7 @@ app.use(
   })
 );
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4500;
 
 app.get("/", async (req, res) => {
   const allBlog = await Blog.find();
