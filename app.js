@@ -11,7 +11,7 @@ const User = require("./userModel");
 const { removeUserBlogID, findBlogs } = require("./userUtils");
 
 const DB_Name = "notABlog";
-const DB_URL = process.env.DB_URL_ENV;
+const DB_URL = process.env.DB_URL_ENV + DB_Name;
 
 mongoose.connect(DB_URL, { useNewUrlParser: true }).then(() => {
   console.log("Connected to DB");
