@@ -17,7 +17,6 @@ mongoose.connect(DB_URL, { useNewUrlParser: true }).then(() => {
   console.log("Connected to DB");
 });
 
-// TODO: mongoose-encryption
 
 app.set("view engine", "ejs");
 app.set("json spaces", 2);
@@ -132,7 +131,6 @@ app.post("/create", async (req, res) => {
 
 app.post("/delete", async (req, res) => {
   const blogID = req.body.deleteForm;
-  //   TODO: also delete blog from req.session.user array;
   try {
     deletedForm = await Blog.deleteOne({ _id: blogID }).then(() => {
       const user = User.findOne({ _id: req.session.userID }).then((user) => {
@@ -228,7 +226,6 @@ app
             userName: enteredUsername,
             password: enteredPassword,
           });
-          // TODO: check if user alredy exists
           try {
             let saveUser = await newUser.save().then((saveUser) => {
               console.log("Saved! ", saveUser);
